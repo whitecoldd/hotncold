@@ -1,33 +1,25 @@
-import { motion } from "framer-motion";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
-const Cuisine = () => {
+const Results = () => {
   const [recipees, setRecipees] = useState([]);
   const params = useParams();
   useEffect(() => {
-    const getCuisine = async (country) => {
+    const getResults = async (input) => {
       const api = await fetch(
         `https://api.spoonacular.com/recipes/complexSearch?apiKey=${
           import.meta.env.VITE_API_KEY
-        }&cuisine=${country}`
+        }&query=${input}&number=12`
       );
       const data = await api.json();
       console.log(data);
       setRecipees(data.results);
     };
-    getCuisine(params.ct);
-  }, [params.ct]);
+    getResults(params.dish);
+  }, [params.dish]);
 
   return (
-    <motion.div
-      animate={{ opacity: 1 }}
-      initial={{ opacity: 0 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
-      className="griddiv"
-    >
+    <div className="griddiv">
       {recipees.map((re, i) => (
         <div key={i}>
           <Link to={`/${re.id}`}>
@@ -36,8 +28,8 @@ const Cuisine = () => {
           </Link>
         </div>
       ))}
-    </motion.div>
+    </div>
   );
 };
 
-export default Cuisine;
+export default Results;

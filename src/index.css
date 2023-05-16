@@ -21,6 +21,14 @@
   font-family: "burtons";
   src: url("/Burtons.otf");
 }
+@font-face {
+  font-family: "ananda";
+  src: url("/AnandaBlack.ttf");
+}
+@font-face {
+  font-family: "greatvibes";
+  src: url("/GreatVibes.ttf");
+}
 
 * {
   margin: 0;

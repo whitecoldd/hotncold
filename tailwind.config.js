@@ -2,7 +2,7 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: { fontFamily: { burtons: "burtons" } },
+    extend: { fontFamily: { burtons: "burtons", ananda: "ananda" } },
   },
   plugins: [],
 };
