@@ -36,8 +36,8 @@ const Dish = () => {
           onClick={() => setActive(false)}
           className={` ${
             !active
-              ? "bg-gradient-to-r from-slate-700 to-gray-900 text-white"
-              : "text-gray-800 bg-white"
+              ? "bg-gradient-to-r from-slate-700 to-gray-900 text-white "
+              : "text-gray-800 bg-white hover:bg-gradient-to-r hover:from-slate-700 hover:to-gray-900 hover:text-white"
           } px-8 py-4 border-2 border-solid border-black mr-8 font-semibold`}
         >
           Instruction
@@ -47,7 +47,7 @@ const Dish = () => {
           className={` ${
             active
               ? "bg-gradient-to-r from-slate-700 to-gray-900 text-white"
-              : "text-gray-800 bg-white"
+              : "text-gray-800 bg-white hover:bg-gradient-to-r hover:from-slate-700 hover:to-gray-900 hover:text-white"
           } px-8 py-4 border-2 border-solid border-black mr-8 font-semibold`}
         >
           Ingredients

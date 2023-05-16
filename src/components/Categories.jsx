@@ -10,7 +10,7 @@ const Categories = () => {
         <NavLink
           className={`flex flex-col items-center justify-center ${
             location == "italian"
-              ? "bg-gradient-to-r from-[#158342] to-[#104f60]"
+              ? "bg-gradient-to-b from-red-600 to-cyan-600"
               : "bg-gradient-to-r from-slate-950 to-slate-600"
           } h-24 w-24 cursor-pointer scale-75 text-white text-lg rounded-full overflow-hidden`}
           to={"/cuisine/italian"}
@@ -21,7 +21,7 @@ const Categories = () => {
         <NavLink
           className={`flex flex-col items-center justify-center ${
             location == "mexican"
-              ? "bg-gradient-to-r from-[#158342] to-[#104f60]"
+              ? "bg-gradient-to-b from-red-600 to-cyan-600"
               : "bg-gradient-to-r from-slate-950 to-slate-600"
           } h-24 w-24 cursor-pointer scale-75 text-white text-lg rounded-full overflow-hidden`}
           to={"/cuisine/mexican"}
@@ -32,7 +32,7 @@ const Categories = () => {
         <NavLink
           className={`flex flex-col items-center justify-center ${
             location == "japanese"
-              ? "bg-gradient-to-r from-[#158342] to-[#104f60]"
+              ? "bg-gradient-to-b from-red-600 to-cyan-600"
               : "bg-gradient-to-r from-slate-950 to-slate-600"
           } h-24 w-24 cursor-pointer scale-75 text-white text-lg rounded-full overflow-hidden`}
           to={"/cuisine/japanese"}
@@ -43,7 +43,7 @@ const Categories = () => {
         <NavLink
           className={`flex flex-col items-center justify-center ${
             location == "greek"
-              ? "bg-gradient-to-r from-[#158342] to-[#104f60]"
+              ? "bg-gradient-to-b from-red-600 to-cyan-600"
               : "bg-gradient-to-r from-slate-950 to-slate-600"
           } h-24 w-24 cursor-pointer scale-75 text-white text-lg rounded-full overflow-hidden`}
           to={"/cuisine/greek"}
