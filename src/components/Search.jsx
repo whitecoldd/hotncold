@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BiSearchAlt } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 const Search = () => {
-  const [input, setInput] = useState("second");
+  const [input, setInput] = useState("");
   const navigate = useNavigate();
   const onChangeHandler = (e) => {
     e.preventDefault();
